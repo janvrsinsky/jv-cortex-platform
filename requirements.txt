@@ -1,0 +1,8 @@
+# The runnable example (examples/vault_linter_concept.py and its parser) uses
+# the Python standard library only. There are no third-party runtime
+# dependencies to install.
+#
+# Requires Python 3.8 or newer.
+#
+# Run the linter directly:
+#     python examples/vault_linter_concept.py examples/sample_docs
