@@ -43,7 +43,7 @@ from frontmatter_parser import parse_frontmatter, split_frontmatter  # noqa: E40
 
 # The em-dash character, referenced by unicode escape rather than as a literal
 # so the linter's own source never contains the glyph it forbids.
-EM_DASH = "-"
+EM_DASH = "\u2014"
 
 # Synthetic controlled vocabularies. These are illustrative, not the private
 # vault's real taxonomy.
