@@ -4,6 +4,8 @@
 
 **A self-hosted knowledge platform built to be operated by AI agents, not just read by a human.**
 
+**[▶ See Cortex in motion](https://github.com/janvrsinsky/jv-obsidian-assistant)**: the Celestia assistant operating this platform live over a sanitized copy of the vault (a morning brief assembled across the vault, a business update written into the right note).
+
 ![status](https://img.shields.io/badge/status-production-2ea44f)
 ![repo](https://img.shields.io/badge/repo-architecture%20docs%20%2B%20runnable%20example-blue)
 ![selfhosted](https://img.shields.io/badge/self--hosted-yes-informational)
@@ -12,6 +14,7 @@
 ![python](https://img.shields.io/badge/python-3.11-3776AB)
 ![docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![tooling](https://img.shields.io/badge/tooling-linter%20%2B%20parsers-lightgrey)
+![example](https://img.shields.io/badge/runnable%20example-stdlib%2C%200%20deps-lightgrey)
 
 Cortex is a markdown vault wired into an AI-agent stack. It runs on my own infrastructure, it is the system I run my working life out of every day, and it is the platform the [Celestia assistant](https://github.com/janvrsinsky/jv-obsidian-assistant) sits on top of. This repo documents the architecture and ships a runnable piece of its tooling. It does not contain any vault content.
 
@@ -33,7 +36,7 @@ Being precise about this matters, so here it is plainly.
 
 ## See it in motion
 
-There are no clips in this repo, because the visible surface lives one layer up. [Celestia](https://github.com/janvrsinsky/jv-obsidian-assistant) is an assistant persona with an MCP filesystem core running over a sanitized copy of this vault; its recorded demos (a morning brief assembled across the vault, a business update written into the correct note) are Cortex in motion. This repo is the platform underneath.
+Cortex in motion lives one layer up, in [Celestia](https://github.com/janvrsinsky/jv-obsidian-assistant): an assistant persona with an MCP filesystem core running over a sanitized copy of this vault. Its recorded demos (a morning brief assembled across the whole vault, a business update written into the correct note) show this platform doing real work. This repo is the engine underneath.
 
 ---
 
@@ -111,7 +114,7 @@ Where a consumer of a platform like this genuinely needs retrieval quality, that
 
 ## How it is built
 
-Built AI-first: I direct tools like Claude Code to generate and refactor the code while I own the architecture, the tool boundaries, and the failure modes, then read, run, and debug what ships. Twenty-five years around software is what tells me where a system like this rots and what "runs unattended" actually costs.
+Built AI-first: I direct tools like Claude Code to generate and refactor the code while I own the architecture, the tool boundaries, and the failure modes, then read, run, and debug what ships. Twenty-five years building software is what tells me where a system like this rots and what "runs unattended" actually costs.
 
 ---
 
