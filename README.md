@@ -24,7 +24,7 @@ Cortex is a markdown vault wired into an AI-agent stack. It runs on my own infra
 
 A plain-markdown vault (thousands of notes) turned into something agents can act on safely: a typed [MCP](https://modelcontextprotocol.io) layer so agents search, read, and write through auditable tools instead of raw filesystem access; a self-hosted sync server so every device shares one source of truth; scheduled and on-demand agents that triage captures, surface dated commitments, and push an alert when something needs a human; and Python tooling that keeps thousands of notes structurally honest.
 
-The design bet is that the durable engineering is the vault, the tool layer, and the guardrails. The chat face on top is replaceable.
+The design bet is that the durable engineering is the vault, the tool layer, and the guardrails. The chat front end on top is replaceable.
 
 ## What is real, and what ships here
 
@@ -54,7 +54,7 @@ The architecture is a short list of decisions, each one made before any code was
 
 **The human stays the editor.** Automation proposes, archives, and alerts. Deciding and deleting stay with me. No autonomous delete is an invariant, not a preference.
 
-**Capture is sacred, state is honest.** Updates land the moment they happen; automation flags drift and stale records instead of papering over them, and pushes an alert when something cannot wait.
+**Capture is immediate, state stays honest.** Updates land the moment they happen; automation flags drift and stale records instead of papering over them, and pushes an alert when something cannot wait.
 
 ```mermaid
 flowchart TB
@@ -92,7 +92,7 @@ flowchart TB
 
 ## Correctness and safety
 
-A knowledge platform earns trust not through a benchmark number but through the guarantees it can make about what it will and will not do. Cortex leans on four of them.
+A knowledge platform is trusted for the guarantees it can make about what it will and will not do, not for a benchmark number. Cortex leans on four of them.
 
 **Structure is enforced by tooling, not by discipline.** A linter checks naming conventions and required frontmatter across the whole vault, so conventions hold mechanically at thousands of notes rather than depending on anyone remembering them. This repo ships a clean-room version of that idea:
 
