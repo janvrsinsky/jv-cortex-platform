@@ -6,6 +6,8 @@
 
 **[▶ See Cortex in motion](https://github.com/janvrsinsky/jv-obsidian-assistant)**: the Celestia assistant operating this platform live over a sanitized copy of the vault (a morning brief assembled across the vault, a business update written into the right note).
 
+[![vault linter](https://github.com/janvrsinsky/jv-cortex-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/janvrsinsky/jv-cortex-platform/actions/workflows/ci.yml)
+
 ![status](https://img.shields.io/badge/status-production-2ea44f)
 ![repo](https://img.shields.io/badge/repo-architecture%20docs%20%2B%20runnable%20example-blue)
 ![selfhosted](https://img.shields.io/badge/self--hosted-yes-informational)
@@ -100,7 +102,7 @@ A knowledge platform is trusted for the guarantees it can make about what it wil
 python examples/vault_linter_concept.py
 ```
 
-It lints a bundled sample directory of fixtures (some valid notes, some deliberately broken), checking naming (kebab-case filenames) and structure (frontmatter with required keys), and reports each violation with a file and a reason. Standard library only, no dependencies.
+It lints a bundled sample directory of fixtures (some valid notes, some deliberately broken), checking naming (kebab-case filenames) and structure (frontmatter with required keys), and reports each violation with a file and a reason. Standard library only, no dependencies. `test_linter.py` holds every rule in place with 28 checks, pinning both the verdict over the fixtures and each rule fired in isolation, and GitHub Actions runs them on every push.
 
 **Actions go through typed tools.** Agents reach the vault through allowlisted MCP tools, so every read and write is observable and bounded. There is no path for an agent to touch the filesystem outside that surface.
 

@@ -1,0 +1,30 @@
+name: vault linter
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  linter:
+    name: vault linter, Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Nothing is installed on purpose. The linter, its fixtures and the check
+      # all run on the standard library, so a green build also shows the example
+      # reproduces anywhere with a Python on it.
+      - name: Check the vault linter
+        run: python test_linter.py
