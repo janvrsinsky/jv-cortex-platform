@@ -64,7 +64,7 @@ Retrieval quality gets measured, in a sibling project on my [profile](https://gi
 
 ## Status and contact
 
-**PRODUCTION EXTRACT.** A sanitized public cut of a private system in real use. The architecture and method are real; data, names and some components are stand-ins, and the README lists which is which. In daily use as the platform underneath [Celestia](https://github.com/janvrsinsky/jv-obsidian-assistant), one of a set of systems built on the same shape: typed MCP tools, guardrails in code, and a human in the loop. The architecture, the tool boundaries, and the failure modes are mine; twenty-five years building software is what tells me where a system like this rots and what "runs unattended" actually costs.
+**PRODUCTION EXTRACT.** A sanitized public cut of a private system in real use. The architecture and method are real; data, names and some components are stand-ins, and the README lists which is which. In daily use as the platform underneath [Celestia](https://github.com/janvrsinsky/jv-obsidian-assistant), one of a set of systems built on the same shape: typed MCP tools, guardrails in code, and a human in the loop. I direct AI coding tools to build it; the architecture, the tool boundaries, and the failure modes are mine; twenty-five years building software is what tells me where a system like this rots and what "runs unattended" actually costs.
 
 - Portfolio: [github.com/janvrsinsky](https://github.com/janvrsinsky)
 - LinkedIn: [linkedin.com/in/janvrsinsky](https://linkedin.com/in/janvrsinsky)
